@@ -1,0 +1,22 @@
+{
+  "name": "gravitational",
+  "version": "1.0.0",
+  "description": "Front End Challenge For Gravitational",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterianmuller/Gravitational.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterianmuller/Gravitational/issues"
+  },
+  "homepage": "https://github.com/peterianmuller/Gravitational#readme",
+  "dependencies": {
+    "create-react-app": "^3.3.0"
+  }
+}
