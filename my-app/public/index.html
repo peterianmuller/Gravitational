@@ -28,6 +28,23 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Initialize Firebase
+      // firebase.initializeApp(firebaseConfig);
+      console.log("firebase is: ", firebase);
+      firebase.initializeApp({
+        authDomain: "hacker-news.firebaseio.com",
+        databaseURL: "https://hacker-news.firebaseio.com"
+      });
+    </script>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
