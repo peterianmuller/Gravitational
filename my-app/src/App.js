@@ -45,13 +45,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Nav />
-        <More handler={this.moreBtnClickHandler} />
         <Posts
           posts={this.state.posts.slice(
             this.state.currentPage * 30,
             (this.state.currentPage + 1) * 30
           )}
         />
+        <More handler={this.moreBtnClickHandler} />
       </div>
     );
   }
