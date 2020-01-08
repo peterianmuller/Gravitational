@@ -33,12 +33,16 @@ class App extends React.Component {
       });
   }
   render() {
-    console.log(this.state.posts.slice(0, 30));
     return (
       <div className="App">
         <Nav />
         <More />
-        <Posts posts={this.state.posts} />
+        <Posts
+          posts={this.state.posts.slice(
+            this.state.currentPage,
+            (this.state.currentPage + 1) * 30
+          )}
+        />
       </div>
     );
   }
