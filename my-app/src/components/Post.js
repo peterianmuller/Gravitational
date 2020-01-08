@@ -2,22 +2,22 @@ import React from "react";
 import logo from "../logo.svg";
 import "../App.css";
 
-function Post() {
-  return (
-    <div>
+class Post extends React.Component {
+  render() {
+    return (
       <div>
-        <strong>1.</strong>
-        <a>Headline</a>
-        <a>(URL)</a>
+        <div>
+          <strong>1.</strong>
+          <a>{this.props.title}</a>
+          <a>({this.props.url})</a>
+        </div>
+        <div>
+          <span>{this.props.points} points</span>
+          <a> by {this.props.author}</a>
+        </div>
       </div>
-      <div>
-        <span>points</span>
-        <a>author</a>
-        <a>time</a>
-        <a>comments</a>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Post;
