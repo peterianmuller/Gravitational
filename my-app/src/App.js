@@ -12,6 +12,15 @@ class App extends React.Component {
     this.state = { posts: [], currentPage: 0 };
   }
 
+  moreBtnClickHandler = e => {
+    this.setState(currentState => {
+      return {
+        posts: currentState.posts,
+        currentPage: ++currentState.currentPage
+      };
+    });
+  };
+
   componentDidMount() {
     this.fetchTopStories();
   }
@@ -36,10 +45,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Nav />
-        <More />
+        <More handler={this.moreBtnClickHandler} />
         <Posts
           posts={this.state.posts.slice(
-            this.state.currentPage,
+            this.state.currentPage * 30,
             (this.state.currentPage + 1) * 30
           )}
         />

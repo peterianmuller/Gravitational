@@ -8,9 +8,10 @@ class Posts extends React.Component {
   render() {
     return (
       <ol className="posts">
-        {this.props.posts.map(function(post) {
+        {this.props.posts.map(function(post, i) {
           return (
             <Post
+              key={post.id}
               author={post.by}
               url={post.url}
               title={post.title}

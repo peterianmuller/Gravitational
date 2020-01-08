@@ -6,7 +6,7 @@ class More extends React.Component {
   render() {
     return (
       <div>
-        <button> More </button>
+        <button onClick={this.props.handler}> More </button>
       </div>
     );
   }
