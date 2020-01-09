@@ -51,8 +51,25 @@ html {
   text-decoration: none;
 }
 
-body {
-  line-height: 1;
+.btn {
+  box-shadow: none;
+  font-family: "Lato", sans-serif;
+  border: none;
+  background: #f4511e;
+  border-radius: 4px;
+  padding: 0 32px;
+  display: inline-block;
+  margin: 16px 0 40px 32px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .App {
