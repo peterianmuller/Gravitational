@@ -5,15 +5,15 @@ import "../App.css";
 class Post extends React.Component {
   render() {
     return (
-      <div>
-        <div>
-          <strong>1.</strong>
-          <a>{this.props.title}</a>
-          <a>({this.props.url})</a>
+      <div className="post">
+        <div class="post-top-line">
+          <strong>1. </strong>
+          <a className="post-title">{this.props.title}</a>
+          <a className="post-url">({this.props.url})</a>
         </div>
         <div>
-          <span>{this.props.points} points</span>
-          <a> by {this.props.author}</a>
+          <span className="post-points">{this.props.points} points</span>
+          <a className="post-author"> by {this.props.author}</a>
         </div>
       </div>
     );

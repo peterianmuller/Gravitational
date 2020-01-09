@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import "./reset.css";
 import "./App.css";
 import Nav from "./components/Nav.js";
 import Post from "./components/Post.js";

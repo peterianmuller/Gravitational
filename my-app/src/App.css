@@ -1,5 +1,62 @@
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* font-size: 12px; */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  background: #ffffff;
+  font-family: "Lato", sans-serif;
+  padding: 8px 8px;
+  margin: 0 24px;
+  color: #37474f;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.post-title {
+  color: #37474f;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.post-url {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #0277bd;
+  line-height: 24px;
+}
+
+.post-points {
+  font-size: 10px;
+  margin: 0 8px 0 0;
+}
+
+.post-author {
+  font-size: 10px;
+  margin: 0 8px 0 0;
+  color: #0277bd;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
