@@ -8,7 +8,7 @@ class Post extends React.Component {
     return (
       <div className="post">
         <div class="post-top-line">
-          <strong>1. </strong>
+          <strong>{this.props.index + 1}. </strong>
           <a className="post-title">{this.props.title}</a>
           <a className="post-url">({this.props.url})</a>
         </div>

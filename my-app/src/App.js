@@ -47,6 +47,7 @@ class App extends React.Component {
       <div className="App">
         <Nav />
         <Posts
+          currentPage={this.state.currentPage}
           posts={this.state.posts.slice(
             this.state.currentPage * 30,
             (this.state.currentPage + 1) * 30

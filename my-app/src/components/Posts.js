@@ -7,12 +7,14 @@ class Posts extends React.Component {
     super();
   }
   render() {
+    let currentPage = this.props.currentPage;
     return (
       <ol className="posts">
         {this.props.posts.map(function(post, i) {
           console.log(post);
           return (
             <Post
+              index={i + currentPage * 30}
               key={post.id}
               author={post.by}
               url={post.url}
