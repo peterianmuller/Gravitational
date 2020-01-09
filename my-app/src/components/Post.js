@@ -13,7 +13,11 @@ class Post extends React.Component {
         </div>
         <div>
           <span className="post-points">{this.props.points} points</span>
-          <a className="post-author"> by {this.props.author}</a>
+          <a className="post-second-line-item"> by {this.props.author}</a>
+          <a className="post-second-line-item">{this.props.time}</a>
+          <a className="post-second-line-item">
+            {this.props.comments} comments
+          </a>
         </div>
       </div>
     );

@@ -10,6 +10,7 @@ class Posts extends React.Component {
     return (
       <ol className="posts">
         {this.props.posts.map(function(post, i) {
+          console.log(post);
           return (
             <Post
               key={post.id}
@@ -17,6 +18,8 @@ class Posts extends React.Component {
               url={post.url}
               title={post.title}
               points={post.score}
+              time={post.time}
+              comments={post.descendants}
             />
           );
         })}
