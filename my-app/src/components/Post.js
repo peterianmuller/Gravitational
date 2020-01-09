@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 import logo from "../logo.svg";
 import "../App.css";
 
@@ -14,7 +15,9 @@ class Post extends React.Component {
         <div>
           <span className="post-points">{this.props.points} points</span>
           <a className="post-second-line-item"> by {this.props.author}</a>
-          <a className="post-second-line-item">{this.props.time}</a>
+          <a className="post-second-line-item">
+            {moment(moment().valueOf(this.props.time)).fromNow()}
+          </a>
           <a className="post-second-line-item">
             {this.props.comments} comments
           </a>
