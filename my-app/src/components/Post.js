@@ -16,7 +16,7 @@ class Post extends React.Component {
           <span className="post-points">{this.props.points} points</span>
           <a className="post-second-line-item"> by {this.props.author}</a>
           <a className="post-second-line-item">
-            {moment(moment().valueOf(this.props.time)).fromNow()}
+            {moment(moment.unix(this.props.time)).fromNow()}
           </a>
           <a className="post-second-line-item">
             {this.props.comments} comments
